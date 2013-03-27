@@ -1,0 +1,19 @@
+{% extends '_foodlayout.html' %}
+{%block content%}
+
+<div class='dashboard'>
+	<div class='contentbox'>
+
+
+		<form action="/food/add/" method="post">
+			{% csrf_token %}
+			<!--{{form.as_p}}-->
+			{{ form }}
+			<input type='submit'>
+		</form>
+
+
+	</div>
+</div>
+
+{%endblock%}

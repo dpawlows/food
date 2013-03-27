@@ -1,0 +1,8 @@
+mysql -uroot food -p < drop.sql
+
+       
+
+
+
+
+

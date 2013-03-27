@@ -1,0 +1,14 @@
+{% extends '_foodlayout.html' %}
+{%block content%}
+
+<div class='dashboard'>
+	<div class='contentbox'>
+		<p>Cuisne: {{nation}}</p>
+				{% for recipe in recipes%}
+				Recipes: <a href="{{nation.id}}/recipes/{{recipe.id}}">{{recipe}}</a>
+
+			{% endfor %}
+	</div>
+</div>
+
+{%endblock%}

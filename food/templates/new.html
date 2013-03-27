@@ -1,0 +1,10 @@
+{% extends '_foodlayout.html' %}
+{%block content%}
+
+
+Hello!
+{{newrecipe.description}}
+{%for r in newrecipe.ingredients.all%}
+{{r}}
+{%endfor%}
+{%endblock%}
